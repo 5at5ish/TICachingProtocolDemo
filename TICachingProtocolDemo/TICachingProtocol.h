@@ -1,15 +1,13 @@
 //
-//  SecondViewController.h
+//  TICachingProtocol.h
 //  TICachingProtocolDemo
 //
 //  Created by Timur Islamgulov on 27/01/15.
 //  Copyright (c) 2015 5at5ish. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface SecondViewController : UIViewController
-
+@interface TICachingProtocol : NSURLProtocol
 
 @end
-

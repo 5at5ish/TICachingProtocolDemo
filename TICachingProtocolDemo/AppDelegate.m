@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "TIWebViewController.h"
+#import "TICachingProtocol.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [NSURLProtocol registerClass:[TICachingProtocol class]];
+    
+    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+    UINavigationController *nc = (UINavigationController *)[tabBarController viewControllers][0];
+    TIWebViewController *vc1 = (TIWebViewController *)[[nc viewControllers] firstObject];
+    nc = (UINavigationController *)[tabBarController viewControllers][1];
+    TIWebViewController *vc2 = (TIWebViewController *)[[nc viewControllers] firstObject];
+    vc1.userAgentIdentifier = @"iPhone UA1";
+    vc1.URL = [NSURL URLWithString:@"https://apple.com"];
+    vc2.userAgentIdentifier = @"iPhone UA2";
+    vc2.URL = [NSURL URLWithString:@"https://yandex.ru"];
+
     return YES;
 }
 

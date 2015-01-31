@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		3EA86FED1A76DBE500D3C408 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA86FEC1A76DBE500D3C408 /* main.m */; };
 		3EA86FF01A76DBE500D3C408 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA86FEF1A76DBE500D3C408 /* AppDelegate.m */; };
-		3EA86FF31A76DBE500D3C408 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA86FF21A76DBE500D3C408 /* FirstViewController.m */; };
-		3EA86FF61A76DBE500D3C408 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA86FF51A76DBE500D3C408 /* SecondViewController.m */; };
 		3EA86FF91A76DBE500D3C408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EA86FF71A76DBE500D3C408 /* Main.storyboard */; };
 		3EA86FFB1A76DBE500D3C408 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EA86FFA1A76DBE500D3C408 /* Images.xcassets */; };
 		3EA86FFE1A76DBE500D3C408 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EA86FFC1A76DBE500D3C408 /* LaunchScreen.xib */; };
 		3EA8700A1A76DBE500D3C408 /* TICachingProtocolDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA870091A76DBE500D3C408 /* TICachingProtocolDemoTests.m */; };
+		3EA870181A76DFC700D3C408 /* TIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA870171A76DFC700D3C408 /* TIWebViewController.m */; };
+		3EA870211A76FDF500D3C408 /* TICachingProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA870201A76FDF500D3C408 /* TICachingProtocol.m */; };
+		3EA870241A76FE5A00D3C408 /* TICachingProtocolDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA870231A76FE5A00D3C408 /* TICachingProtocolDelegateProxy.m */; };
+		3EA870271A77A1DF00D3C408 /* TICacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA870261A77A1DF00D3C408 /* TICacheManager.m */; };
+		3EA8702A1A77A2CB00D3C408 /* TICachedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA870291A77A2CB00D3C408 /* TICachedItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,16 +36,22 @@
 		3EA86FEC1A76DBE500D3C408 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3EA86FEE1A76DBE500D3C408 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3EA86FEF1A76DBE500D3C408 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3EA86FF11A76DBE500D3C408 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		3EA86FF21A76DBE500D3C408 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		3EA86FF41A76DBE500D3C408 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		3EA86FF51A76DBE500D3C408 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		3EA86FF81A76DBE500D3C408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3EA86FFA1A76DBE500D3C408 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3EA86FFD1A76DBE500D3C408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3EA870031A76DBE500D3C408 /* TICachingProtocolDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TICachingProtocolDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EA870081A76DBE500D3C408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EA870091A76DBE500D3C408 /* TICachingProtocolDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TICachingProtocolDemoTests.m; sourceTree = "<group>"; };
+		3EA870161A76DFC700D3C408 /* TIWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIWebViewController.h; sourceTree = "<group>"; };
+		3EA870171A76DFC700D3C408 /* TIWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIWebViewController.m; sourceTree = "<group>"; };
+		3EA8701F1A76FDF500D3C408 /* TICachingProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TICachingProtocol.h; sourceTree = "<group>"; };
+		3EA870201A76FDF500D3C408 /* TICachingProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TICachingProtocol.m; sourceTree = "<group>"; };
+		3EA870221A76FE5A00D3C408 /* TICachingProtocolDelegateProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TICachingProtocolDelegateProxy.h; sourceTree = "<group>"; };
+		3EA870231A76FE5A00D3C408 /* TICachingProtocolDelegateProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TICachingProtocolDelegateProxy.m; sourceTree = "<group>"; };
+		3EA870251A77A1DF00D3C408 /* TICacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TICacheManager.h; sourceTree = "<group>"; };
+		3EA870261A77A1DF00D3C408 /* TICacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TICacheManager.m; sourceTree = "<group>"; };
+		3EA870281A77A2CB00D3C408 /* TICachedItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TICachedItem.h; sourceTree = "<group>"; };
+		3EA870291A77A2CB00D3C408 /* TICachedItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TICachedItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,12 +93,18 @@
 		3EA86FE91A76DBE500D3C408 /* TICachingProtocolDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3EA8701F1A76FDF500D3C408 /* TICachingProtocol.h */,
+				3EA870201A76FDF500D3C408 /* TICachingProtocol.m */,
+				3EA870281A77A2CB00D3C408 /* TICachedItem.h */,
+				3EA870291A77A2CB00D3C408 /* TICachedItem.m */,
+				3EA870251A77A1DF00D3C408 /* TICacheManager.h */,
+				3EA870261A77A1DF00D3C408 /* TICacheManager.m */,
+				3EA870221A76FE5A00D3C408 /* TICachingProtocolDelegateProxy.h */,
+				3EA870231A76FE5A00D3C408 /* TICachingProtocolDelegateProxy.m */,
+				3EA870161A76DFC700D3C408 /* TIWebViewController.h */,
+				3EA870171A76DFC700D3C408 /* TIWebViewController.m */,
 				3EA86FEE1A76DBE500D3C408 /* AppDelegate.h */,
 				3EA86FEF1A76DBE500D3C408 /* AppDelegate.m */,
-				3EA86FF11A76DBE500D3C408 /* FirstViewController.h */,
-				3EA86FF21A76DBE500D3C408 /* FirstViewController.m */,
-				3EA86FF41A76DBE500D3C408 /* SecondViewController.h */,
-				3EA86FF51A76DBE500D3C408 /* SecondViewController.m */,
 				3EA86FF71A76DBE500D3C408 /* Main.storyboard */,
 				3EA86FFA1A76DBE500D3C408 /* Images.xcassets */,
 				3EA86FFC1A76DBE500D3C408 /* LaunchScreen.xib */,
@@ -224,10 +239,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EA86FF61A76DBE500D3C408 /* SecondViewController.m in Sources */,
+				3EA870211A76FDF500D3C408 /* TICachingProtocol.m in Sources */,
+				3EA8702A1A77A2CB00D3C408 /* TICachedItem.m in Sources */,
 				3EA86FF01A76DBE500D3C408 /* AppDelegate.m in Sources */,
-				3EA86FF31A76DBE500D3C408 /* FirstViewController.m in Sources */,
 				3EA86FED1A76DBE500D3C408 /* main.m in Sources */,
+				3EA870181A76DFC700D3C408 /* TIWebViewController.m in Sources */,
+				3EA870241A76FE5A00D3C408 /* TICachingProtocolDelegateProxy.m in Sources */,
+				3EA870271A77A1DF00D3C408 /* TICacheManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +436,7 @@
 				3EA8700F1A76DBE500D3C408 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3EA870101A76DBE500D3C408 /* Build configuration list for PBXNativeTarget "TICachingProtocolDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +445,7 @@
 				3EA870121A76DBE500D3C408 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
